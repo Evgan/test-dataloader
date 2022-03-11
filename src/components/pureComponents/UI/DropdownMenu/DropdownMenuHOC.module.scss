@@ -1,0 +1,30 @@
+.container {
+  //position: absolute;
+  //z-index: 99999999999;
+  position: relative;
+  .trigger {
+
+  }
+
+  &.up {
+    //position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .menu {
+    position: absolute;
+    z-index: 9999;
+    &.menuUp {
+      //position: absolute;
+      top: 0;
+      //z-index: 9999;
+      > div {
+        position: absolute;
+        bottom: 0;
+        > div {
+          position: relative;
+        }
+      }
+    }
+  }
+}

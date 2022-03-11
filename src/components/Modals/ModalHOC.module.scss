@@ -1,0 +1,39 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+
+  .outside {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(16, 24, 40, 0.5);
+  }
+  .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .content {
+      position: relative;
+      background-color: #FFFFFF;
+      border-radius: 15px;
+      padding: 32px;
+
+      .close {
+        position: absolute;
+        top: 0;
+        right: -60px;
+        border-radius: 15px;
+        //background-color: #ffffff;
+
+        //svg {
+        //  fill: $dsRt-text-color;
+        //}
+      }
+
+    }
+  }
+}

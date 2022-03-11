@@ -1,0 +1,23 @@
+.withPreloader {
+  .preloader {
+    width: 25px;
+    height: 25px;
+    position: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.eventNone {
+  pointer-events: none;
+}
+
+.successIcon {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-image: url('../../../../../static/img/icons/success.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}

@@ -1,0 +1,36 @@
+.container {
+
+  padding: 10px;
+
+  .table {
+    margin: 10px;
+    background-color: #f9f9f9;
+    height: calc(100vh - 60px);
+
+    .list {
+      height: 400px;
+    }
+  }
+
+}
+
+.cellSize {
+  &:nth-child(1) {
+    width: 10%;
+  }
+  &:nth-child(2) {
+    width: 10%;
+  }
+  &:nth-child(3) {
+    width: 15%;
+  }
+  &:nth-child(4) {
+    width: 15%;
+  }
+  &:nth-child(5) {
+    width: 15%;
+  }
+  &:nth-child(6) {
+    width: 35%;
+  }
+}

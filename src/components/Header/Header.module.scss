@@ -1,0 +1,27 @@
+@import "../../styles/_variables";
+
+.header {
+  height: $heightHeaderMine;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.20%);
+
+  .center {
+    max-width: 1504px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 50%;
+    margin: auto;
+    padding: 0 30px;
+
+    .left {
+      display: flex;
+    }
+  }
+}
+
+.translate50 {
+  transform: translateY(-50%);
+}
+

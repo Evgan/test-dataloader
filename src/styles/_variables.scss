@@ -1,0 +1,18 @@
+$z-layers: (
+    "downMenu": 9001
+);
+
+@function z($layer) {
+  @if not map-has-key($z-layers, $layer) {
+    @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+  }
+
+  @return map-get($z-layers, $layer);
+}
+
+
+$heightHeaderMine: 78px;
+
+$dsRt-border-color: #e0e0e3;
+
+$dsRt-color_Secondary2: #2F9AFF;

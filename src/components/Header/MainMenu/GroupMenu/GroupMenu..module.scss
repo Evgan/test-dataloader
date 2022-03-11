@@ -1,0 +1,30 @@
+.groupMenu {
+  .title {
+    pointer-events: none;
+    height: 30px;
+    margin-top: 10px;
+    .center {
+      //height: 30px;
+      position: relative;
+      top: 50%;
+      display: flex;
+      > * {
+        transform: translateY(-50%);
+      }
+      :not(:first-child) {
+        margin-left: 10px;
+        line-height: 30px;
+      }
+    }
+
+  }
+
+  .submenu {
+    margin-top: -2px;
+    padding-left: 33px;
+    :not(:first-child) {
+      margin-top: 4px;
+    }
+
+  }
+}

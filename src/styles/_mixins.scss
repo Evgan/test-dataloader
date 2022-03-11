@@ -1,0 +1,54 @@
+@import './_variables';
+
+@mixin pseudo($width, $height, $content: '') {
+  content: $content;
+  display: block;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+}
+
+$widthToFlexClusterPage: 750px;
+
+@mixin media($min: null, $max: null, $type: width) {
+  @if $min and $max {
+    @media only screen and (min-#{$type}: $min) and (max-#{$type}: $max) {
+      @content
+    }
+  } @else if $min {
+    @media only screen and (min-#{$type}: $min) {
+      @content
+    }
+  } @else {
+    @media only screen and (max-#{$type}: $max) {
+      @content
+    }
+  }
+}
+
+@mixin dsRt-tab() {
+  height: 30px;
+  position: relative;
+  margin-left: 30px;
+  p {
+    line-height: 30px;
+  }
+
+  &:hover {
+    p {
+      color: $dsRt-color_Secondary2;
+    }
+  }
+
+}
+
+@mixin dsRt-tab-selected() {
+  color: $dsRt-color_Secondary2;
+  &:before {
+    -webkit-animation: animWidth .25s 1 ease-in-out;
+    @include pseudo(100%, 2px);
+    background-color: $dsRt-color_Secondary2;
+    bottom: -2px;
+  }
+}

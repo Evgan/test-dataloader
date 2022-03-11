@@ -1,0 +1,12 @@
+@import "../../../../styles/variables";
+
+.rowMenu {
+}
+
+.menu {
+  display: flex;
+  padding: 5px;
+  background: #ffffff;
+  border: 1px solid $dsRt-border-color;
+  box-shadow: 0 0 8px rgba(28, 41, 61, 0.05), 0 2px 4px rgba(28, 41, 61, 0.06);
+}

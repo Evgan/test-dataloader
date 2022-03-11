@@ -1,0 +1,19 @@
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 72px;
+  .tooltip {
+    position: absolute;
+    z-index: 9999;
+    top: -4px;
+  }
+  .absolute{
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.inputWrapper {
+  width: 100% !important;
+}

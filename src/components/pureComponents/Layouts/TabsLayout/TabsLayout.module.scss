@@ -1,0 +1,40 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+$heightTabList: 44px;
+
+.container {
+
+  height: 100%;
+
+  .tabs{
+
+    height: 100%;
+
+    .tabList{
+
+      display: flex;
+      width: 300px;
+
+      li {
+        display: block;
+        cursor: pointer;
+        text-decoration: none !important;
+        @include dsRt-tab();
+      }
+
+      .selected{
+        @include dsRt-tab-selected();
+      }
+
+    }
+
+    .line {
+      border-top: 2px solid $dsRt-border-color;
+    }
+
+    .tabPanelSelected{
+      height: calc(100% - #{$heightTabList});
+    }
+  }
+}

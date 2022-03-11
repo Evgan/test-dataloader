@@ -1,0 +1,21 @@
+.translate50 {
+  transform: translateY(-50%);
+}
+
+.dropdown {
+  > div {
+    width: 327px;
+    max-width: 327px;
+    margin-top: 7px
+  }
+}
+
+.downContainer {
+  padding: 12px 23px !important;
+
+  >:not(:first-child) {
+    border-top: solid 1px #F4F4F5;
+    margin-top: 13px;
+    padding-top: 4px;
+  }
+}

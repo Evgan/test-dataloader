@@ -1,0 +1,26 @@
+
+.container{
+  height: 100vh;
+  //background-image: url("../../static/img/mineBg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 465px;
+  height: 335px;
+  transform: translate(-50%, -50%);
+  padding: 48px 70px;
+  z-index: 1;
+  background-color: #f0f1f3;
+  box-sizing: border-box;
+  box-shadow: 0 46px 46px rgba(10, 17, 46, 0.40), 0 16.7908px 16.7908px rgba(10, 17, 46, 0.15), 0 8.1516px 8.1516px rgba(10, 17, 46, 0.19), 0 3.99607px 3.99607px rgba(10, 17, 46, 0.09), 0 1.58005px 1.58005px rgba(10, 17, 46, 0.22);
+  border-radius: 1em;
+
+  .title {
+    text-align: center;
+  }
+
+}
